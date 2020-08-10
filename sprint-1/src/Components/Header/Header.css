@@ -1,0 +1,126 @@
+.header {
+  margin: 0 5%;
+  height: 16.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 2.4rem;
+    height: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    max-width: 108rem;
+    margin: 0 12.5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1.6rem 0;
+  }
+}
+
+.logo {
+  height: 4.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-right: 0;
+  }
+}
+
+.box__search {
+  height: 4.8rem;
+  width: 28.8rem;
+}
+
+@media (min-width: 768px) {
+  .box__search {
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box__search {
+    width: 30rem;
+  }
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.8rem 0 1.6rem 0;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .input {
+    margin: 0;
+  }
+}
+
+.input__button {
+  width: 22.2rem;
+  height: 5rem;
+  border-radius: 5px;
+  background-color: #0095ff;
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .input__button {
+    margin-left: 2.4rem;
+    width: 13rem;
+  }
+}
+
+.input__image {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-left: 1.6rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .input__image {
+    margin-left: 2.4rem;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Body.scss"
-import Image1 from "../../assets/Images/video-list-0.jpg";
+import { v4 as uuidv4 } from 'uuid';
+// import Image1 from "../../assets/Images/video-list-0.jpg";
 import Image2 from "../../assets/Images/video-list-1.jpg";
 import Image3 from "../../assets/Images/video-list-2.jpg";
 import Image4 from "../../assets/Images/video-list-3.jpg";
@@ -12,73 +13,69 @@ import Image9 from "../../assets/Images/video-list-8.jpg";
 
 
 class Body extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  // constructor(props) {
+  //   super(props);
+    // this.
+    state = {
       data: [
-        {
-          video: Image1,
-          title: "BMX Rampage: 2018 Highlights",
-          author: "Red Cow",
-          id: 1
-        },
         {
           video: Image2,
           title: "Become A Travel Pro In 8 Easy Lesson",
           author: "Scotty Cranmer",
-          id: 2
+          id: uuidv4()
         },
         {
           video: Image3,
           title: "need to be updated",
           author: "Scotty Cranmer",
-          id: 3
+          id: uuidv4()
         },
         {
           video: Image4,
           title: "Travel Health Useful Medical Information...",
           author: "Scotty Cranmer",
-          id: 4
+          id: uuidv4()
         },
         {
           video: Image5,
           title: "Cheap Airline Tickets Great Ways To Save",
           author: "Emily Harper",
-          id: 5
+          id: uuidv4()
         },
         {
           video: Image6,
           title: "Take A Romantic Break In A Boutique Hotel",
           author: "Ethan Owen",
-          id: 6
+          id: uuidv4()
         },
         {
           video: Image7,
           title: "Choose The Perfect Accommodations",
           author: "Lydia Perez",
-          id: 7
+          id: uuidv4()
         },
         {
           video: Image8,
           title: "Cruising Destination Ideas",
           author: "Timothy Austin",
-          id: 8
+          id: uuidv4()
         },
         {
           video: Image9,
           title: "Train Travel On Track For Safety",
           author: "Scotty Cranmer",
-          id: 9
+          id: uuidv4()
         },
       ]
     };
-  }
+
+    
   render() {
     return (
       <div className="next-videos">
-        <h2>Next Video</h2>
+        <h2 className="next-videos__heading">Next Video</h2>
         {this.state.data.map(todo => (
-          <div className="playlist">
+          <div className="playlist" key={todo.id}>
             <div className="playlist__media">
               <img className="playlist__media--image" src={todo.video} alt="playlist"></img>
             </div>

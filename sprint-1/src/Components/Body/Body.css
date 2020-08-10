@@ -1,0 +1,25 @@
+.playlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.playlist__media--image {
+  width: 12rem;
+  height: 7rem;
+  margin-bottom: 2.4rem;
+}
+
+.playlist__content {
+  width: 52.5%;
+  margin-left: 5%;
+}
+
+.playlist__content--title {
+  margin-bottom: 1.6rem;
+}
+
+.next-videos {
+  margin: 0 5%;
+}
+/*# sourceMappingURL=Body.css.map */
