@@ -24,10 +24,11 @@ html{
     .body-container{
         display: flex;
         max-width: 108rem;
-        margin: 0 12.5%;
+        margin: 0 10%;
     }
 
     .body-container__left{
         margin-right: 5rem;
+        width: 65%;
     }
 }
