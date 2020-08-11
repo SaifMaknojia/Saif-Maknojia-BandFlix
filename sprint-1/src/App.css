@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 *, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
 
 html{
     font-size: 10px;
+    
 }
 
 
+@media (min-width: 1200px){
+    
+    .body-container{
+        display: flex;
+        max-width: 108rem;
+        margin: 0 12.5%;
+    }
+
+    .body-container__left{
+        margin-right: 5rem;
+    }
+}

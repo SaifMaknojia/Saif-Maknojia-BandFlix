@@ -1,5 +1,8 @@
 import React from "react";
-import "./Main.scss"
+import "./Main.scss";
+
+import Views from "../../assets/Images/eye.svg";
+import Heart from "../../assets/Images/heart.svg";
 
 
 function Main() {
@@ -17,8 +20,8 @@ function Main() {
                                 <p className="input-section__title--date">12/18/2018</p>
                             </div>
                             <div className="input-section__feedback">
-                                <p className="input-section__feedback--views">1,001,023</p>
-                                <p className="input-section__feedback--loves">110,985</p>
+                                <p className="input-section__feedback--views"><span><img className="icons" src={Views} alt="views"></img></span>&nbsp;&nbsp;1,001,023</p>
+                                <p className="input-section__feedback--loves"><span><img className="icons" src={Heart} alt="heart"></img></span>&nbsp;&nbsp;110,985</p>
                             </div>
                         </div>
                     </div>

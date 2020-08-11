@@ -1,0 +1,38 @@
+
+
+@mixin mobile-header1{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    @content;
+}
+
+@mixin mobile-header3{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    @content;
+}
+
+@mixin mobile-para {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    @content;
+
+}
+
+@mixin desktop-header1{
+    font-size: 6rem;
+    line-height: 6.8rem;
+    @content;
+}
+
+@mixin desktop-header2{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    @content;
+}
+
+@mixin desktop-para{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    @content;
+}

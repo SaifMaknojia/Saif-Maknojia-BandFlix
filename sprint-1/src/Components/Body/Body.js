@@ -26,14 +26,14 @@ class Body extends React.Component {
         },
         {
           video: Image3,
-          title: "need to be updated",
-          author: "Scotty Cranmer",
+          title: "Les Houches The Hidden Gem Of The Chamonix",
+          author: "Bernard Patrick",
           id: uuidv4()
         },
         {
           video: Image4,
           title: "Travel Health Useful Medical Information...",
-          author: "Scotty Cranmer",
+          author: "Lizzie Burton",
           id: uuidv4()
         },
         {

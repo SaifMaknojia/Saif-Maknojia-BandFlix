@@ -49,7 +49,7 @@ class Comment extends React.Component {
                         <div className="feedback__comment">
                             <div className="feedback__comment--back-img"></div>
                          </div>
-                        <div class="comment-holder-2">
+                        <div className="comment-holder-2">
                             <div className="feedback__heading">
                                 <h2 className="feedback__heading--name">{todo.name}</h2>
                                 <h2 className="feedback__heading--date">{todo.date}</h2>
