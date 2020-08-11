@@ -1,0 +1,52 @@
+@import "../mixin.scss";
+
+.playlist{
+    display: flex;
+    margin-top: 1rem;
+    
+    &__media{
+        &--image{
+            width: 12rem;
+            height: 7rem;
+            margin: 1.2rem 0;
+        }
+    }
+    &__content{
+        width: 52.5%;
+        margin-left: 5%;
+
+        &--title{
+            margin-bottom: 1.6rem;
+            @include mobile-header3;
+
+            @media (min-width: 768px){
+                @include desktop-header2;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &--author{
+            @include mobile-para;
+
+            @media (min-width: 768px){
+                font-size: 1.6rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+.next-videos{
+    margin: 0 5%;
+
+    &__heading{
+        margin: 4rem 0;
+        color: #afafaf;
+        @include mobile-header3;
+
+        @media (min-width: 768px){
+           font-size: 2.4rem;
+        }
+    }
+}

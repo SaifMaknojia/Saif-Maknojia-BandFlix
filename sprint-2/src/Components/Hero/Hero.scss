@@ -1,0 +1,16 @@
+.hero{
+    &__holder{
+        @media (min-width: 768px){
+            background-color: black;
+        }
+        &--image{
+            width: 100%;
+            @media (min-width: 768px){
+                display: flex;
+                width: 85%;
+                margin: 0 auto;
+            }              
+        }
+    }   
+}
+
