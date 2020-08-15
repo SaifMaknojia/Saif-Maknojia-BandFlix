@@ -1,32 +1,30 @@
 import React from "react";
 import formImage from '../../assets/Images/Mohan-muruge.jpg';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
+import axios from 'axios';
 import "./Comment.scss"
 
-class Comment extends React.Component {
-    state = {
-        data: [
-            {
-                name: 'Micheal Lyons',
-                date: '12/18/2018',
-                review: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
-                id: uuidv4()
+const Api ="88fb5a67-de37-4846-8150-4456365820c7"
+const ApiLink = `https://project-2-api.herokuapp.com`
 
-            },
-            {
-                name: 'Gary Wong',
-                date: '12/18/2018',
-                review: "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
-                id: uuidv4()
-            },
-            {
-                name: 'Theodore Duncan',
-                date: '11/15/2018',
-                review: "How can someone be so good!!! You can tell he lives for this and loves to do it every day Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
-                id: uuidv4()
-            }
-        ]
+class Comment extends React.Component {
+    
+    state = {
+        data: []
+        
     }
+
+         componentDidUpdate(){
+        axios.get(`${ApiLink}/videos?api_key=${Api}`)
+        .then(res =>{
+            
+            console.log('hello')
+        }).catch(err => {
+            console.log('hello' + err)
+        })
+     }
+    
+
     render() {
         return (
             <section className="form-section">
@@ -69,3 +67,24 @@ class Comment extends React.Component {
 
 
 export default Comment;
+
+
+/*   {
+                name: 'Micheal Lyons',
+                date: '12/18/2018',
+                review: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
+                id: uuidv4()
+
+            },
+            {
+                name: 'Gary Wong',
+                date: '12/18/2018',
+                review: "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
+                id: uuidv4()
+            },
+            {
+                name: 'Theodore Duncan',
+                date: '11/15/2018',
+                review: "How can someone be so good!!! You can tell he lives for this and loves to do it every day Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
+                id: uuidv4()
+            } */

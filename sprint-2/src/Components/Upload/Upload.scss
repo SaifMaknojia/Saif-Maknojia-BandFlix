@@ -1,0 +1,162 @@
+@import "../mixin.scss";
+
+@mixin fontColor{
+        color: #afafaf;
+        text-transform: uppercase;
+        @content;
+}
+
+.upload{
+    margin: 0 5%;
+
+    @media (min-width: 768px){
+        margin: 0 2.4rem;
+    }
+    @media (min-width: 768px){
+        margin: 0 12.5%;
+    }
+
+    &__section1{
+
+        &--heading{
+            @include mobile-header1;
+            margin: 2.4rem 0 3.2rem 0;
+            @media (min-width: 768px){
+                margin: 4.8rem 0 3.2rem 0;
+                @include desktop-header1
+            }
+            @media (min-width: 768px){
+                margin: 0;
+                
+            }
+        }
+    }
+
+    &__section2{
+        width: 100%;
+        @media (min-width: 768px){
+            width: auto;
+            margin-right: 2.4rem;
+        }
+        &--heading{
+            @include mobile-header3;
+            color: #afafaf;
+            text-transform: uppercase;
+            @media (min-width: 768px){
+                margin: 4.8rem 0 3.2rem 0;
+                @include desktop-header2;
+            }
+            @media (min-width: 1200px){
+                margin: 0;
+                margin-top: 4rem;
+                @include desktop-header2;
+            }
+          
+        }
+        &--image{
+            width: 100% ;
+            margin-bottom: 3.2rem;
+            @media (min-width: 768px){
+                width: 34.4rem;
+                border-radius: .5rem;
+                margin-bottom: 4rem;
+
+            }         
+        }
+    }
+
+    &__section3{
+        margin-bottom: 2.4rem;
+        &--heading {
+            @include mobile-header3;
+            @include fontColor;
+            @media (min-width: 768px) {
+                @include desktop-para;
+                margin: 4.8rem 0 3.2rem 0;
+            }
+            @media (min-width: 1200px){
+                margin: 0;
+                margin-top: 4rem;
+            }
+        }
+        &--input{
+            height: 5rem;
+            width: 100%;
+            padding: 2rem;
+            border: 1px solid #afafaf;
+            border-radius: .4rem;
+            @media (min-width: 1200px){
+                height: 4.8rem;
+            }
+        }
+    }
+    &__section4{
+        margin-bottom: 2.4rem;
+        &--heading {
+            @include mobile-header3;
+            @include fontColor;
+            @media (min-width: 768px) {
+                @include desktop-para;
+            }
+
+        }
+        &--textarea{
+            height: 5rem;
+            width: 100%;
+            padding: 2rem;
+            border: 1px solid #afafaf;
+            border-radius: .4rem;
+            height: 14.5rem;  
+            @media (min-width: 768px){
+                margin-bottom: 4rem;
+            }  
+            @media (min-width: 1200px) {
+                height: 9.4rem;
+            }
+        }
+    }
+
+    &__section5{
+        @media (min-width: 768px){
+            margin-top: 4rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+        }
+        &--input{
+            height: 5rem;
+            width: 100%;
+            border-radius: .5rem;
+            border: .1rem solid transparent;
+            background-color: #0095FF;
+            color: white;
+
+            @media (min-width: 768px){
+                width: 16rem;
+                margin: 4rem 0 0 4.8rem;
+                order: 1;
+            }
+        }
+
+        &--heading{
+            color: #0095FF;
+            @include mobile-header3;
+            margin-top: 2.4rem;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4rem;
+            
+        }
+    }
+
+    &__container{
+        @media (min-width: 1200px) {
+            display: flex;
+        }
+    }
+    &__container2{
+        @media (min-width: 1200px) {
+            width: 100%;
+        }
+    }
+}
