@@ -16,7 +16,7 @@ function Upload() {
                     <h4 className="upload__section2--heading">Video Thumbnail</h4>
                     <img className="upload__section2--image" src={uploadImage} alt="upload Thumbnail"></img>
                 </div>
-                <div class="upload__container2">
+                <div className="upload__container2">
                 <div className="upload__section3">
                     <h4 className="upload__section3--heading">title your video</h4>
                     <input className="upload__section3--input" type="text" placeholder="Add a title to your video"></input>
