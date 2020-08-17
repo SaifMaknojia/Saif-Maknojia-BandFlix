@@ -1,5 +1,8 @@
 @import "../mixin.scss";
 
+Link {
+    text-decoration: none;
+}
 .playlist{
     display: flex;
     margin-top: 1rem;
@@ -27,6 +30,7 @@
 
         &--author{
             @include mobile-para;
+            
 
             @media (min-width: 768px){
                 font-size: 1.6rem;

@@ -8,12 +8,16 @@ class Body extends React.Component {
   };
 
   render() {
+    const myStyle = {
+      color: "black",
+      textDecoration: "none"
+    }
     const videos = this.props.videos.filter(v => v.id !== this.props.currentVideo.id);
     return (
       <div className="next-videos">
         <h2 className="next-videos__heading">Next Video</h2>
         {videos.map(video => (
-          <Link to={`/videos/${video.id}`} key={video.id}>
+          <Link style={{myStyle}} to={`/videos/${video.id}`} key={video.id}>
             <div className="playlist" key={video.id}>
               <div className="playlist__media">
                 <img className="playlist__media--image" src={video.image} alt="playlist"></img>

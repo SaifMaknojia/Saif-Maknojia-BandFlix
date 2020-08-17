@@ -6,8 +6,12 @@ import Heart from "../../assets/Images/heart.svg";
 
 
 class Main extends Component {
+
   render() {
+    
     const data = this.props.video;
+    var timeStamp = new Date(data.timestamp).toLocaleDateString();
+    
     return (
       <main className="main-content">
         <section className="information-section">
@@ -19,7 +23,7 @@ class Main extends Component {
               <div className="input-section">
                 <div className="input-section__title">
                   <h5 className="input-section__title--by">{data.channel}</h5>
-                  <p className="input-section__title--date">{data.timestamp}</p>
+                  <p className="input-section__title--date">{timeStamp}</p>
                 </div>
                 <div className="input-section__feedback">
                   <p className="input-section__feedback--views"><span><img className="icons" src={Views} alt="views"></img></span>&nbsp;&nbsp;{data.views}</p>

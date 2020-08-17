@@ -32,6 +32,7 @@ class Comment extends Component {
               <div className="feedback__heading">
                 <h2 className="feedback__heading--name">{comment.name}</h2>
                 <h2 className="feedback__heading--date">{comment.date}</h2>
+                
               </div>
               <div className="feedback__para">
                 <p className="feedback__para--content">{comment.comment}</p>
