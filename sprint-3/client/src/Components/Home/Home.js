@@ -5,8 +5,8 @@ import Comment from "../Comment/Comment";
 import Body from "../Body/Body";
 import axios from 'axios';
 
-const API = "https://project-2-api.herokuapp.com/videos";
-const API_KEY = '091d11f6-aea8-47f2-8134-f3c324c8e1ad';
+const API = "http://localhost:8080/videos";
+// const API_KEY = '091d11f6-aea8-47f2-8134-f3c324c8e1ad';
 
 
 class Home extends Component {
@@ -37,7 +37,7 @@ class Home extends Component {
 
   getYTVideo = () => {
     axios
-      .get(`${API}?api_key=${API_KEY}`)
+      .get(`${API}`)
       .then(res => {
         console.log(res);
         this.setState({
@@ -54,7 +54,7 @@ class Home extends Component {
 
   getVideoDetails(id) {
     axios.get(
-      `${API}/${id}?api_key=${API_KEY}`
+      `${API}/${id}`
     ).then(res => {
       console.log(res.data);
       this.setState({
