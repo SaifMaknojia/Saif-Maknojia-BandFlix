@@ -1,0 +1,168 @@
+@import "../mixin.scss";
+
+.form-section {
+  margin: 0 1.6rem;
+
+  &--heading {
+    margin-bottom: 3.2rem;
+    @include mobile-header3;
+
+    @media (min-width: 768px){
+      @include desktop-header2;
+    }
+  }
+}
+
+.form {
+  display: flex;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 2rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    &--heading {
+      display: flex;
+      flex-direction: column;
+      color: #AFAFAF;
+      font-weight: bold;
+
+      @include mobile-header3;
+
+      @media (min-width: 768px) {
+        @include desktop-para;
+      } 
+    }
+
+    &--textarea {
+      margin-top: 0.3rem;
+      height: 7rem;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 44rem;
+        height: 5rem;
+      }
+
+      @media (min-width: 1200px) {
+        width: 29rem;
+        margin-right: 1.6rem;
+      }
+    }
+  }
+}
+
+.form-info-button {
+  @media(min-width: 768px){
+    display: flex;
+    align-items: center;
+  }
+
+  &--input {
+    width: 22.2rem;
+    height: 5rem;
+    border-radius: 5px;
+    background-color: #0095ff;
+    border-color: transparent;
+    margin-top: 1.6rem;
+
+    @media (min-width: 768px) {
+      width: 16rem;
+      margin-left: 1.6rem;
+    
+    }
+  }
+}
+
+/* Comments starts here */
+.feedback {
+  display: flex;
+  
+  margin-top: 2rem;
+  @media (min-width: 768px) {
+    align-items: center;
+  }
+
+  &__comment {
+    margin-right: 2rem;
+    margin-top: 3rem;
+
+    @media (min-width: 768px){
+      margin-top: 0px;
+    }
+
+      &--back-img {
+         width: 4.8rem;
+        height: 4.8rem;
+        background-color: #AFAFAF;
+        border-radius: 50%;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px){
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    &--name{
+      @include mobile-header3;
+
+      @media (min-width: 768px){
+        @include desktop-header2;
+    }
+      @media (min-width: 1200px){
+      justify-content: space-between;
+    }
+
+    }
+    
+   
+    &--date{
+      color: #AFAFAF;
+      @include mobile-header3;
+
+      @media (min-width: 768px){
+        margin-left: 3rem;
+        @include desktop-header2;
+    } 
+    }
+  }
+
+  &__para {
+    margin-bottom: 1rem;
+
+    &--content{
+      @include mobile-para;
+
+      @media (min-width: 768px){
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    }
+  }
+}
+
+.form__logo {
+  &--img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+  }
+}

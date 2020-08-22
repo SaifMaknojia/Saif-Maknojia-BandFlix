@@ -1,0 +1,115 @@
+
+@import "../mixin.scss";
+
+
+.main-content{
+    margin: 0 1.6rem;
+
+    @media (min-width: 768px) {
+        margin: 0 2.4rem;    
+    }
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+}
+
+// title
+.main-heading {
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+
+    @media (min-width: 768px) {
+        margin-top: 4.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__heading{
+        @include mobile-header1;
+
+        @media (min-width:768px) {
+            @include desktop-header1;
+        }
+    }
+}
+
+// author, likes, views, dates
+.input-section{
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    &__title{
+        display: flex;
+        margin-bottom: 3.2rem;
+        align-items: center;
+
+        &--by{
+            @include mobile-header3;
+
+            @media (min-width:768px) {
+                @include desktop-header2;
+            }
+        }
+        &--date{
+            margin-left: .8rem;
+            @include mobile-header3;
+            color: #afafaf;
+
+            @media (min-width:768px) {
+                @include desktop-header2;
+            }
+        }
+    }
+
+    &__feedback{
+        display: flex;
+        margin-bottom: 2.4rem;
+        
+        &--views{
+            @include mobile-header3;
+            display: flex;
+            align-items: center;
+
+            @media (min-width:768px) {
+                @include desktop-para;
+            }
+        }
+
+        &--loves{
+            margin-left: 1rem;
+            display: flex;
+            align-items: center;
+            
+            @include mobile-header3;
+
+            @media (min-width:768px) {
+                @include desktop-para;
+            }
+        }
+    }
+}
+
+.hero__para{
+    // margin-top: 2.4rem;
+    margin-bottom: 4rem;
+    border-top: 1px solid silver;
+    padding-top: 2.4rem;
+    &--input{
+        @include mobile-para;
+        @media (min-width: 768px) {
+            width: 75%;
+            @include desktop-para;
+        }
+    }
+}
+
+.icons{
+    width: 1.5rem;
+    margin-top: 1rem;
+    color: #afafaf;
+}
+
+//  form section
+
