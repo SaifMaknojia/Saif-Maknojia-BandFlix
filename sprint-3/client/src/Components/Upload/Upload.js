@@ -8,7 +8,7 @@ function Upload() {
 
   return (
     <section className="upload">
-      <form action="http://localhost:8080/videos" method="POST">
+      <form action="http://localhost:8080/videos" method="post">
         <div className="upload__section1">
           <h2 className="upload__section1--heading">Upload Video</h2>
         </div>
@@ -16,7 +16,7 @@ function Upload() {
           <div className="upload__section2">
             <h4 className="upload__section2--heading">Video Thumbnail</h4>
             <img className="upload__section2--image" src={uploadImage} alt="upload Thumbnail"></img>
-            {/* <input type="hidden" id="image" name="image" value={uploadImage} /> */}
+            <input type="hidden" id="image" name="image" value={uploadImage} />
           </div>
           <div className="upload__container2">
             <div className="upload__section3">
