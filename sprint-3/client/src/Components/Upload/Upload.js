@@ -11,6 +11,9 @@ function Upload() {
       <form action="http://localhost:8080/videos" method="post">
         <div className="upload__section1">
           <h2 className="upload__section1--heading">Upload Video</h2>
+
+
+          
         </div>
         <div className="upload__container">
           <div className="upload__section2">
